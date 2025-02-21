@@ -10,6 +10,7 @@ namespace InspirePO.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<RestOutTableMaster> RestOutTableMasters { get; set; }
+        public DbSet<FormCategory> FormCategories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
